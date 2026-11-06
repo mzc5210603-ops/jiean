@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高斯仪表台 GAUSS BENCH</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bench">
+  <header class="brand">
+    <div class="brand-left">
+      <span class="logo">GZ</span>
+      <div class="brand-text">
+        <h1>高斯仪表台</h1>
+        <span class="sub">GAUSS BENCH · MODEL-5</span>
+      </div>
+    </div>
+    <div class="leds" aria-hidden="true">
+      <i class="led led-amber"></i>
+      <i class="led led-green on"></i>
+      <i class="led led-red"></i>
+    </div>
+  </header>
+
+  <div class="deck">
+    <nav class="channel-rack" id="channelRack">
+      <span class="rack-title">CH</span>
+    </nav>
+
+    <section class="screen">
+      <div class="screen-grid" aria-hidden="true"></div>
+      <div class="screen-glow" aria-hidden="true"></div>
+      <div class="screen-inner" id="screen"></div>
+    </section>
+  </div>
+
+  <div class="hardware" aria-hidden="true">
+    <div class="screws"><i></i><i></i><i></i><i></i></div>
+    <div class="knob-row">
+      <span class="knob" style="--r:24deg"></span>
+      <span class="knob big" style="--r:-40deg"></span>
+      <span class="knob" style="--r:80deg"></span>
+      <span class="plate">SERIAL 5-0922 · MADE FOR LOCAL USE</span>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
